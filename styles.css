@@ -1,62 +1,115 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+/* Reset some default browser styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
     background-color: #f4f4f4;
+    color: #333;
 }
+
+/* Header and Navigation */
 header {
-    background: #d20a0a;
+    background: #333;
     color: #fff;
-    padding: 1rem 0;
-}
-nav .container {
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
-nav ul {
-    list-style: none;
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.burger {
+    cursor: pointer;
+    display: none;
+}
+
+.burger i {
+    font-size: 1.5rem;
+}
+
+.nav-links {
     display: flex;
-    margin: 0;
-    padding: 0;
+    list-style: none;
 }
-nav ul li {
-    margin-left: 20px;
+
+.nav-links li {
+    margin-left: 1rem;
 }
-nav ul li a {
+
+.nav-links li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
 }
-.hero {
-    text-align: center;
-    padding: 50px 0;
-    background: #444;
-    color: #fff;
+
+.nav-links li a:hover {
+    text-decoration: underline;
 }
-.container {
+
+.nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #333;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.nav-links.active li {
+    margin: 1rem 0;
+}
+
+/* Section Styling */
+.section {
+    padding: 5rem 2rem;
+    text-align: center;
+    margin-top: 80px; /* Adjust for fixed header */
+}
+
+.section .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
 }
-h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 10px;
+
+#home {
+    background: #444;
+    color: #fff;
+    padding-top: 10rem;
 }
-.project, .experience {
-    background: #fff;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #333;
+    color: #fff;
 }
-.project img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 10px;
-}
-ul {
-    list-style: none;
-    padding:
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .burger {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+    }
+    .nav-links.active {
+        display: flex;
+    }
 }

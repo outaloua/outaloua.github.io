@@ -3,122 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayyoub Outalouste - Portfolio </title>
+    <title>Ayyoub Outalouste - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="container">
-                <h1 class="logo">Ayyoub OUTALOUSTE</h1>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+            <div class="logo">Ayyoub Outalouste</div>
+            <div class="burger" id="burger">
+                <i class="fas fa-bars"></i>
             </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
-        <div class="hero">
-            <div class="container">
-                <h1>Ayyoub Outalouste</h1>
-                <p>Financial Engineering Student | Aspiring Quant | ENSIMAG </p>
+    </header>
+    <section id="home" class="section">
+        <div class="container">
+            <h1 class="animate__animated animate__fadeIn">Ayyoub Outalouste</h1>
+            <p>Financial Engineering Student | Aspiring Quant | ENSIMAG</p>
+            <p>
+                <a href="https://www.linkedin.com/in/ayyoub-outalouste-b6237224a" target="_blank">
+                    <i class="fab fa-linkedin" style="font-size: 30px;"></i>
+                </a>
+            </p>
+        </div>
+    </section>
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Brexit Simulation Hackathon</h3>
+                <p><strong>Description:</strong> Participated in a Brexit simulation hackathon overseen by Morgan Stanley.</p>
+                <p><strong>Skillset:</strong> Advanced Python-based financial model.</p>
+            </div>
+            <div class="project">
+                <h3>Simulation of Multi-Agent Systems</h3>
+                <p><strong>Description:</strong> Developed a Java application for graphical simulation of multi-agent systems, including Conway’s Game of Life, The immigration game, Schelling’s segregation model, and the Boids model for swarm movement.</p>
+                <p><strong>Skillset:</strong> Java proficiency, Object-oriented principles (encapsulation, inheritance, abstraction), effective use of Java collections.</p>
+            </div>
+            <div class="project">
+                <h3>Software Engineering Project</h3>
+                <p><strong>Description:</strong> Undertook a pivotal software engineering project centered on developing a compiler, delving into its complexities and intricacies.</p>
+                <p><strong>Skillset:</strong> Agile project management, software testing, mathematical abstraction, environmental impact assessment, compiler design.</p>
+            </div>
+            <div class="project">
+                <h3>JPEG to PPM Decoder</h3>
+                <p><strong>Description:</strong> Implemented a JPEG decoder in C, efficiently converting JPEG files to PPM format.</p>
+                <p><strong>Skillset:</strong> Enhanced C programming skills, understanding of JPEG compression algorithm, implementation of Discrete Cosine Transform (DCT) and Huffman Coding, proficiency in picture compression methods.</p>
+            </div>
+            <div class="project">
+                <h3>Monte Carlo Approximation of PI</h3>
+                <p><strong>Description:</strong> Developed a Python program utilizing Monte Carlo simulation to approximate the value of PI, generating random points within a square region and analyzing their distribution to derive an estimate, creating an animated visualization of the simulation process.</p>
+                <p><strong>Skillset:</strong> Proficiency in Python programming, understanding and implementation of mathematical algorithms, data visualization techniques.</p>
+            </div>
+            <div class="project">
+                <h3>Algorithmics and Data Structures Project</h3>
+                <p><strong>Description:</strong> Developed a Python algorithm to identify connected components in a point cloud, employing a graph-based approach where points represented vertices and edges were established based on distance thresholds.</p>
+                <p><strong>Skillset:</strong> Python programming, graph-based algorithms, understanding of connected component identification in point clouds.</p>
+            </div>
+            <div class="project">
+                <h3>TIPE Project: Mathematical Model of Bacterial Resistance</h3>
+                <p><strong>Description:</strong> Created a mathematical model to study bacterial resistance to antibiotics, applying advanced mathematical theorems to analyze the model’s stability.</p>
+                <p><strong>Skillset:</strong> Mathematical modeling, analysis of complex systems, interdisciplinary problem-solving, application of advanced mathematical theorems.</p>
+            </div>
+            <div class="project">
+                <h3>Database Project</h3>
+                <p><strong>Description:</strong> Implemented a relational database management system and application programming using Java and JDBC to develop a demonstrator for a mountain activities club.</p>
+                <p><strong>Skillset:</strong> Relational database management (RDBMS), database design, SQL2, Oracle, application programming JDBC, problem analysis, entity-relationship modeling, functionality implementation.</p>
             </div>
         </div>
-    </header>
-    
-    <section id="home" class="container">
-        <h2>About Me</h2>
-        <p>Welcome to my portfolio. I am a financial engineer with expertise in quantitative analysis, financial modeling, and algorithmic trading. My passion lies in leveraging data to drive financial decision-making and innovation.</p>
     </section>
-    
-    <section id="projects" class="container">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Brexit Simulation Hackathon</h3>
-            <p><strong>Description:</strong> Participated in a Brexit simulation hackathon overseen by Morgan Stanley.</p>
-            <p><strong>Skillset:</strong> Advanced Python-based financial model.</p>
-        </div>
-        <div class="project">
-            <h3>Simulation of Multi-Agent Systems</h3>
-            <p><strong>Description:</strong> Developed a Java application for graphical simulation of multi-agent systems, including Conway’s Game of Life, The immigration game, Schelling’s segregation model, and the Boids model for swarm movement.</p>
-            <p><strong>Skillset:</strong> Java proficiency, Object-oriented principles (encapsulation, inheritance, abstraction), effective use of Java collections.</p>
-        </div>
-        <div class="project">
-            <h3>Software Engineering Project</h3>
-            <p><strong>Description:</strong> Undertook a pivotal software engineering project centered on developing a compiler, delving into its complexities and intricacies.</p>
-            <p><strong>Skillset:</strong> Agile project management, software testing, mathematical abstraction, environmental impact assessment, compiler design.</p>
-        </div>
-        <div class="project">
-            <h3>JPEG to PPM Decoder</h3>
-            <p><strong>Description:</strong> Implemented a JPEG decoder in C, efficiently converting JPEG files to PPM format.</p>
-            <p><strong>Skillset:</strong> Enhanced C programming skills, understanding of JPEG compression algorithm, implementation of Discrete Cosine Transform (DCT) and Huffman Coding, proficiency in picture compression methods.</p>
-        </div>
-        <div class="project">
-            <h3>Monte Carlo Approximation of PI</h3>
-            <p><strong>Description:</strong> Developed a Python program utilizing Monte Carlo simulation to approximate the value of PI, generating random points within a square region and analyzing their distribution to derive an estimate, creating an animated visualization of the simulation process.</p>
-            <p><strong>Skillset:</strong> Proficiency in Python programming, understanding and implementation of mathematical algorithms, data visualization techniques.</p>
-        </div>
-        <div class="project">
-            <h3>Algorithmics and Data Structures Project</h3>
-            <p><strong>Description:</strong> Developed a Python algorithm to identify connected components in a point cloud, employing a graph-based approach where points represented vertices and edges were established based on distance thresholds.</p>
-            <p><strong>Skillset:</strong> Python programming, graph-based algorithms, understanding of connected component identification in point clouds.</p>
-        </div>
-        <div class="project">
-            <h3>TIPE Project: Mathematical Model of Bacterial Resistance</h3>
-            <p><strong>Description:</strong> Created a mathematical model to study bacterial resistance to antibiotics, applying advanced mathematical theorems to analyze the model’s stability.</p>
-            <p><strong>Skillset:</strong> Mathematical modeling, analysis of complex systems, interdisciplinary problem-solving, application of advanced mathematical theorems.</p>
-        </div>
-        <div class="project">
-            <h3>Database Project</h3>
-            <p><strong>Description:</strong> Implemented a relational database management system and application programming using Java and JDBC to develop a demonstrator for a mountain activities club.</p>
-            <p><strong>Skillset:</strong> Relational database management (RDBMS), database design, SQL2, Oracle, application programming JDBC, problem analysis, entity-relationship modeling, functionality implementation.</p>
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>Financial Modeling</li>
+                <li>Quantitative Analysis</li>
+                <li>Algorithmic Trading</li>
+                <li>Data Analysis</li>
+                <li>Python, R, MATLAB, C++</li>
+                <li>Machine Learning</li>
+                <li>Risk Management</li>
+            </ul>
         </div>
     </section>
-    
-    <section id="skills" class="container">
-        <h2>Skills</h2>
-        <ul>
-            <li>Financial Modeling</li>
-            <li>Quantitative Analysis</li>
-            <li>Algorithmic Trading</li>
-            <li>Data Analysis</li>
-            <li>Python, R, MATLAB, C++</li>
-            <li>Machine Learning</li>
-            <li>Risk Management</li>
-        </ul>
-    </section>
-    
-    <section id="experience" class="container">
-        <h2>Experience</h2>
-        <div class="experience">
-            <h3>Financial Engineer at XYZ Bank</h3>
-            <p>Developed and implemented quantitative models for trading strategies and risk management. Collaborated with cross-functional teams to enhance the bank's trading infrastructure.</p>
-        </div>
-        <div class="experience">
-            <h3>Data Analyst at ABC Investment</h3>
-            <p>Conducted data-driven analysis to support investment decisions. Developed predictive models to forecast market trends.</p>
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="experience">
+                <h3>Financial Engineer at XYZ Bank</h3>
+                <p>Developed and implemented quantitative models for trading strategies and risk management. Collaborated with cross-functional teams to enhance the bank's trading infrastructure.</p>
+            </div>
+            <div class="experience">
+                <h3>Data Analyst at ABC Investment</h3>
+                <p>Conducted data-driven analysis to support investment decisions. Developed predictive models to forecast market trends.</p>
+            </div>
         </div>
     </section>
-    
-    <section id="contact" class="container">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:ayyoub.outalouste@grenoble-inp.org">ayyoub.outalouste@grenoble-inp.org</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/ayyoub-outalouste-b6237224a" target="_blank">
-            <i class="fab fa-linkedin" style="font-size: 30px;"></i>
-        </a>
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:ayyoub.outalouste@grenoble-inp.org">ayyoub.outalouste@grenoble-inp.org</a></p>
+            <p>
+                <a href="https://www.linkedin.com/in/ayyoub-outalouste-b6237224a" target="_blank">
+                    <i class="fab fa-linkedin" style="font-size: 30px;"></i>
+                </a>
             </p>
-       
+        </div>
     </section>
-    
     <footer>
         <div class="container">
             <p>&copy; 2024 Ayyoub Outalouste. All rights reserved.</p>
         </div>
     </footer>
-    
     <script src="script.js"></script>
 </body>
 </html>
